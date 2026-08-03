@@ -1,0 +1,35 @@
+[project]
+name = "python-training"
+version = "0.1.0"
+description = "Python Mastery: From the Data Model to System Design"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+exclude = [".venv", "__pycache__", "build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "RET", "PTH"]
+ignore = [
+    "E501",  # line length is handled by the formatter
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Exercise stubs are intentionally incomplete.
+"course/**/exercises/*.py" = ["F401", "F841", "B006", "E731"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+exclude = ['course/.*/exercises/.*']
+
+[[tool.mypy.overrides]]
+module = ["course.*.exercises.*"]
+ignore_errors = true
+
+[tool.pytest.ini_options]
+testpaths = ["course"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-q"
