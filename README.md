@@ -19,7 +19,7 @@ course/
 ├── 02-intermediate/    13 modules   01-13            8 weeks    10-15 h/week
 ├── 03-advanced/        17 modules   14-30            12 weeks   10-15 h/week
 ├── 04-system-design/   16 modules   D01-D10, 31-36   10 weeks   10-15 h/week
-└── 05-machine-learning/ 19 modules  M01-M19          16 weeks   10-15 h/week
+└── 05-machine-learning/ 21 modules  M01-M21          18 weeks   10-15 h/week
 ```
 
 | Level | What it is for |
@@ -28,7 +28,7 @@ course/
 | **[02 Intermediate](course/02-intermediate/README.md)** | What the interpreter is actually doing, and how to model problems with types the Python way. Foundations and object-oriented Python. |
 | **[03 Advanced](course/03-advanced/README.md)** | Code that survives review and load. Generators, decorators, typing, testing, concurrency, profiling, CPython internals, then applied work: automation, HTTP, databases, FastAPI, data, deployment. |
 | **[04 System Design](course/04-system-design/README.md)** | Data structures and algorithms first, then architecture: estimation, service models, caching and queues, data at scale, reliability, and a capstone. |
-| **[05 Machine Learning](course/05-machine-learning/README.md)** | Learning from first principles, deep learning in PyTorch, generative models including GANs and diffusion, then tokenisation, pretraining a mini LLM, fine tuning, serving, and a capstone. |
+| **[05 Machine Learning](course/05-machine-learning/README.md)** | Learning from first principles, the classical toolbox, deep learning in PyTorch, generative models including GANs and diffusion, then tokenisation, pretraining a mini LLM, fine tuning, serving, choosing the right approach, and a capstone. |
 
 Full detail, week by week, is in [`CURRICULUM.md`](CURRICULUM.md).
 
@@ -92,7 +92,7 @@ producing the *illusion* of understanding. Only the interpreter tells the truth.
 7. Take the self-check quiz at the bottom of the README. If you cannot answer a
    question in one or two sentences, go back to that section.
 
-**Do not skip the milestone projects** (B12, 07, 13, 20, 36, M15, M19). They are where
+**Do not skip the milestone projects** (B12, 07, 13, 20, 36, M16, M21). They are where
 isolated concepts fuse into working knowledge. A module you can pass a quiz on
 but cannot use in a project, you do not know.
 
@@ -171,3 +171,5 @@ without looking anything up:
   numerically against the reference implementation.
 - Pretrain a small language model on data you prepared, and fine-tune a large
   one under a fixed memory budget, with an evaluation that could reject it.
+- Given an unfamiliar problem, produce a constraint sheet and choose an approach,
+  naming the alternatives you rejected and the evidence that would reverse it.

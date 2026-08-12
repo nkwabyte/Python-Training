@@ -11,7 +11,7 @@ course/
 ├── 02-intermediate/    13 modules   01-13     Parts 1 and 2
 ├── 03-advanced/        17 modules   14-30     Parts 3, 4 and 5
 ├── 04-system-design/   16 modules   D01-D10, 31-36   Parts 6 and 7
-└── 05-machine-learning/ 19 modules  M01-M19          Parts 8, 9, 10 and 11
+└── 05-machine-learning/ 21 modules  M01-M21          Parts 8, 9, 10 and 11
 ```
 
 Legend: **L** = lesson hours, **E** = exercise hours, **P** = project hours.
@@ -44,14 +44,14 @@ not skip Advanced.
 | 02 Intermediate | 8 weeks | 10 to 15 hours | Week 18 |
 | 03 Advanced | 12 weeks | 10 to 15 hours | Week 30 |
 | 04 System Design | 10 weeks | 10 to 15 hours | Week 40 |
-| 05 Machine Learning | 16 weeks | 10 to 15 hours | Week 56 |
+| 05 Machine Learning | 18 weeks | 10 to 15 hours | Week 58 |
 
-Starting from zero, the full path is roughly fourteen months. Starting at
-Intermediate it is nine months, and the original five-month shape of this
+Starting from zero, the full path is roughly fifteen months. Starting at
+Intermediate it is ten months, and the original five-month shape of this
 course is Levels 02 and 03 together.
 
 Level 05 can be taken directly after Level 03. Level 04 is not a strict
-prerequisite for it, though Modules M18 and M19 use its vocabulary.
+prerequisite for it, though Modules M19 and M21 use its vocabulary.
 
 ---
 
@@ -218,13 +218,13 @@ before writing code.
 
 **Folder:** [`course/05-machine-learning/`](course/05-machine-learning/README.md)
 
-Goal: build models rather than call them. Every architecture is implemented from
-parts and verified against the library version before the library is allowed to
-do the work. PyTorch throughout, with the Hugging Face stack layered on from
-Module M16. Advanced Module 29 supplies the NumPy and pandas groundwork and is
-the prerequisite.
+Goal: build models rather than call them, and then choose the right one. Every
+architecture is implemented from parts and verified against the library version
+before the library is allowed to do the work. PyTorch throughout, with the
+Hugging Face stack layered on from Module M17. Advanced Module 29 supplies the
+NumPy and pandas groundwork and is the prerequisite.
 
-## Part 8 — Foundations of Learning (Weeks 1-3 of this level)
+## Part 8 — Foundations of Learning (Weeks 1-4 of this level)
 
 | Wk | Module | Topics | Time |
 |---|---|---|---|
@@ -232,42 +232,47 @@ the prerequisite.
 | 1-2 | [M02 The Maths You Will Actually Use](course/05-machine-learning/part-8-ml-foundations/m02-the-maths-you-will-use/README.md) | Shapes and matmul. The dot product as similarity. Chain rule and gradients of the operations you use. Probability, maximum likelihood, and where squared error and cross entropy come from. Optimisation geometry. Build a scalar autodiff engine. | L5 E6 |
 | 2 | [M03 Linear Models and Gradient Descent](course/05-machine-learning/part-8-ml-foundations/m03-linear-models-and-gradient-descent/README.md) | Linear and logistic regression implemented from scratch. Gradient descent, learning rates, and the three loss-curve failures. Batch, stochastic, mini-batch. Feature scaling. L1 and L2. | L4 E6 |
 | 3 | [M04 Evaluation and the Experimental Loop](course/05-machine-learning/part-8-ml-foundations/m04-evaluation-and-the-experimental-loop/README.md) | Metrics as decisions. Imbalance and thresholds. Calibration. Cross validation including grouped and temporal. Error analysis. Baselines and ablations. Reproducibility and an experiment harness. | L4 E6 |
+| 4 | [M05 The Classical Toolbox](course/05-machine-learning/part-8-ml-foundations/m05-classical-toolbox/README.md) | Decision trees and why one overfits. Bagging, random forests, out-of-bag error. Gradient boosting and the four hyperparameters that matter. Why trees still win on tabular data. Categorical encoding and the target-encoding leak. Clustering. PCA, t-SNE, UMAP and what they do not support. Permutation importance, partial dependence, SHAP. | L5 E7 |
 
-## Part 9 — Deep Learning with PyTorch (Weeks 4-8 of this level)
-
-| Wk | Module | Topics | Time |
-|---|---|---|---|
-| 4 | [M05 Tensors and Autograd](course/05-machine-learning/part-9-deep-learning/m05-tensors-and-autograd/README.md) | Tensors, dtypes, devices, views, broadcasting. The autograd graph, backward, gradient accumulation. no_grad and detach. The training loop written out line by line. | L4 E6 |
-| 4-5 | [M06 Neural Networks, Derived and Built](course/05-machine-learning/part-9-deep-learning/m06-neural-networks/README.md) | Why a non-linearity. Activations. Backpropagation derived by hand and implemented in NumPy. nn.Module. Initialisation. Optimisers from SGD to AdamW. Parameter counts from shapes. | L5 E7 |
-| 5-6 | [M07 Training That Actually Works](course/05-machine-learning/part-9-deep-learning/m07-training-that-works/README.md) | The overfitting toolkit. Batch, layer, and RMS norm. Learning rate schedules and warmup. The ordered checklist for a stuck run. Vanishing and exploding gradients. Data pipelines. Mixed precision and speed. | L5 E7 |
-| 6-7 | [M08 Convolutional Networks and Vision](course/05-machine-learning/part-9-deep-learning/m08-convolutional-networks-and-vision/README.md) | Convolution as a prior. Stride, padding, channels, receptive field. Pooling. LeNet to ResNet and the residual connection. Transfer learning and fine tuning. Augmentation that respects the label. | L4 E7 |
-| 7 | [M09 Sequences, Recurrence, and the Road to Attention](course/05-machine-learning/part-9-deep-learning/m09-sequences-and-attention/README.md) | RNNs and backpropagation through time. Vanishing gradients and LSTM gates. The two walls recurrence hits. Embeddings. Scaled dot-product attention derived as the fix. | L4 E6 |
-| 8 | [M10 The Transformer, Built from Parts](course/05-machine-learning/part-9-deep-learning/m10-the-transformer/README.md) | Multi-head attention from scratch. Causal and padding masks. The block, residuals, pre-norm versus post-norm. Positional encodings including rotary. Encoder, decoder, and both. The quadratic cost. Verified against PyTorch and run with real pretrained weights. | L5 E8 |
-
-## Part 10 — Generative Models (Weeks 9-11 of this level)
+## Part 9 — Deep Learning with PyTorch (Weeks 5-9 of this level)
 
 | Wk | Module | Topics | Time |
 |---|---|---|---|
-| 9 | [M11 Autoencoders and VAEs](course/05-machine-learning/part-10-generative-models/m11-autoencoders-and-vaes/README.md) | Encoder, bottleneck, decoder. Why sampling from a plain autoencoder fails. The ELBO derived. The reparameterisation trick. Latent interpolation and the beta trade. Posterior collapse and blurriness. | L4 E6 |
-| 10 | [M12 Generative Adversarial Networks](course/05-machine-learning/part-10-generative-models/m12-gans/README.md) | The minimax game and the learned loss. DCGAN. Mode collapse, discriminator dominance, oscillation. Wasserstein loss, gradient penalty, spectral norm. Conditional generation. FID and honest evaluation. | L5 E7 |
-| 11 | [M13 Diffusion Models](course/05-machine-learning/part-10-generative-models/m13-diffusion-models/README.md) | Many small denoising steps instead of one leap. The forward process and its closed form. Predicting the noise. U-Net with timestep conditioning. DDPM and DDIM sampling. Classifier-free guidance. Latent diffusion. | L5 E7 |
+| 5 | [M06 Tensors and Autograd](course/05-machine-learning/part-9-deep-learning/m06-tensors-and-autograd/README.md) | Tensors, dtypes, devices, views, broadcasting. The autograd graph, backward, gradient accumulation. no_grad and detach. The training loop written out line by line. | L4 E6 |
+| 5-6 | [M07 Neural Networks, Derived and Built](course/05-machine-learning/part-9-deep-learning/m07-neural-networks/README.md) | Why a non-linearity. Activations. Backpropagation derived by hand and implemented in NumPy. nn.Module. Initialisation. Optimisers from SGD to AdamW. Parameter counts from shapes. | L5 E7 |
+| 6-7 | [M08 Training That Actually Works](course/05-machine-learning/part-9-deep-learning/m08-training-that-works/README.md) | The overfitting toolkit. Batch, layer, and RMS norm. Learning rate schedules and warmup. The ordered checklist for a stuck run. Vanishing and exploding gradients. Data pipelines. Mixed precision and speed. | L5 E7 |
+| 7-8 | [M09 Convolutional Networks and Vision](course/05-machine-learning/part-9-deep-learning/m09-convolutional-networks-and-vision/README.md) | Convolution as a prior. Stride, padding, channels, receptive field. Pooling. LeNet to ResNet and the residual connection. Transfer learning and fine tuning. Augmentation that respects the label. | L4 E7 |
+| 8 | [M10 Sequences, Recurrence, and the Road to Attention](course/05-machine-learning/part-9-deep-learning/m10-sequences-and-attention/README.md) | RNNs and backpropagation through time. Vanishing gradients and LSTM gates. The two walls recurrence hits. Embeddings. Scaled dot-product attention derived as the fix. | L4 E6 |
+| 9 | [M11 The Transformer, Built from Parts](course/05-machine-learning/part-9-deep-learning/m11-the-transformer/README.md) | Multi-head attention from scratch. Causal and padding masks. The block, residuals, pre-norm versus post-norm. Positional encodings including rotary. Encoder, decoder, and both. The quadratic cost. Verified against PyTorch and run with real pretrained weights. | L5 E8 |
 
-## Part 11 — Language Models and LLMs (Weeks 12-16 of this level)
+## Part 10 — Generative Models (Weeks 10-12 of this level)
 
 | Wk | Module | Topics | Time |
 |---|---|---|---|
-| 12 | [M14 Tokenisation and Language Modelling](course/05-machine-learning/part-11-language-models/m14-tokenisation-and-language-modelling/README.md) | Byte pair encoding implemented from scratch. Special tokens and chat templates. Why tokenisation explains the famous failures. Next-token prediction and teacher forcing. Perplexity. Temperature, top-k, top-p. | L4 E6 |
-| 12-13 | [M15 Build a Mini LLM from Scratch](course/05-machine-learning/part-11-language-models/m15-build-a-mini-llm/README.md) | A decoder-only transformer specified in full. Corpus cleaning, deduplication, packing. A stable pretraining run with checkpointing and resumption. Scaling laws applied to your budget. KV cache generation. An honest evaluation. | P16 |
-| 14 | [M16 Pretrained Models and the Open Ecosystem](course/05-machine-learning/part-11-language-models/m16-pretrained-models-and-the-ecosystem/README.md) | Base versus instruction-tuned. Memory arithmetic before loading. The library mapped onto what you built. Batching, padding side, streaming. 8-bit and 4-bit quantisation measured. Datasets, licences, and reading a model card critically. | L4 E6 |
-| 15 | [M17 Fine-tuning and Alignment](course/05-machine-learning/part-11-language-models/m17-fine-tuning-and-alignment/README.md) | The cost ladder: prompt, few-shot, retrieval, fine-tune. Building an instruction dataset. Full fine-tuning memory computed explicitly. LoRA and QLoRA. Prompt masking. RLHF in outline and DPO in detail. Regression suites and catastrophic forgetting. | L5 E9 |
-| 16 | [M18 Serving, Evaluation, and Cost](course/05-machine-learning/part-11-language-models/m18-serving-evaluation-and-cost/README.md) | Prefill versus decode. KV cache memory, continuous batching, paged attention, speculative decoding. A streaming FastAPI service. Retrieval augmentation and its limits. Evaluation suites that gate a release. Monitoring and drift. Cost per thousand requests. | L4 E7 |
-| 16 | [M19 Capstone](course/05-machine-learning/part-11-language-models/m19-capstone/README.md) | One project end to end: specification, dataset, evaluation before model, the modelling ladder, a deployed service with monitoring, and a design document defended against a review checklist. | P24 |
+| 10 | [M12 Autoencoders and VAEs](course/05-machine-learning/part-10-generative-models/m12-autoencoders-and-vaes/README.md) | Encoder, bottleneck, decoder. Why sampling from a plain autoencoder fails. The ELBO derived. The reparameterisation trick. Latent interpolation and the beta trade. Posterior collapse and blurriness. | L4 E6 |
+| 11 | [M13 Generative Adversarial Networks](course/05-machine-learning/part-10-generative-models/m13-gans/README.md) | The minimax game and the learned loss. DCGAN implemented and trained. Mode collapse, discriminator dominance, oscillation. Wasserstein loss, gradient penalty, spectral norm. Conditional generation. FID and honest evaluation. Fine-tuning a pretrained generator on a few hundred images. | L5 E9 |
+| 12 | [M14 Diffusion Models](course/05-machine-learning/part-10-generative-models/m14-diffusion-models/README.md) | Many small denoising steps instead of one leap. The forward process and its closed form. Predicting the noise. U-Net with timestep conditioning. DDPM and DDIM sampling. Classifier-free guidance. Latent diffusion. Adapting a pretrained model with LoRA, DreamBooth, and textual inversion. | L5 E9 |
+
+## Part 11 — Language Models and LLMs (Weeks 13-18 of this level)
+
+| Wk | Module | Topics | Time |
+|---|---|---|---|
+| 13 | [M15 Tokenisation and Language Modelling](course/05-machine-learning/part-11-language-models/m15-tokenisation-and-language-modelling/README.md) | Byte pair encoding implemented from scratch. Special tokens and chat templates. Why tokenisation explains the famous failures. Next-token prediction and teacher forcing. Perplexity. Temperature, top-k, top-p. | L4 E6 |
+| 13-14 | [M16 Build a Mini LLM from Scratch](course/05-machine-learning/part-11-language-models/m16-build-a-mini-llm/README.md) | A decoder-only transformer specified in full. Corpus cleaning, deduplication, packing. A stable pretraining run with checkpointing and resumption. Scaling laws applied to your budget. KV cache generation. An honest evaluation. | P16 |
+| 15 | [M17 Pretrained Models and the Open Ecosystem](course/05-machine-learning/part-11-language-models/m17-pretrained-models-and-the-ecosystem/README.md) | Base versus instruction-tuned. Memory arithmetic before loading. The library mapped onto what you built. Batching, padding side, streaming. 8-bit and 4-bit quantisation measured. Datasets, licences, and reading a model card critically. | L4 E6 |
+| 16 | [M18 Fine-tuning and Alignment](course/05-machine-learning/part-11-language-models/m18-fine-tuning-and-alignment/README.md) | The cost ladder: prompt, few-shot, retrieval, fine-tune. Building an instruction dataset. Full fine-tuning memory computed explicitly. LoRA and QLoRA. Prompt masking. RLHF in outline and DPO in detail. Regression suites and catastrophic forgetting. | L5 E9 |
+| 17 | [M19 Serving, Evaluation, and Cost](course/05-machine-learning/part-11-language-models/m19-serving-evaluation-and-cost/README.md) | Prefill versus decode. KV cache memory, continuous batching, paged attention, speculative decoding. A streaming FastAPI service. Retrieval augmentation and its limits. Evaluation suites that gate a release. Monitoring and drift. Cost per thousand requests. | L4 E7 |
+| 17-18 | [M20 Choosing an Approach](course/05-machine-learning/part-11-language-models/m20-choosing-an-approach/README.md) | Does this need a model at all. The constraint sheet. Problem shape to family. The escalation ladder and what justifies each rung. The language model ladder specifically. Data volume rules of thumb. Cost, latency, build against buy. The model choice record. What ages and what does not. | L3 E8 |
+| 18 | [M21 Capstone](course/05-machine-learning/part-11-language-models/m21-capstone/README.md) | One project end to end: specification, dataset, evaluation before model, the modelling ladder, a deployed service with monitoring, and a design document defended against a review checklist. | P24 |
 
 **Exit test.** Implement attention and a transformer block from tensors and match
 the reference numerically. Pretrain a small language model on a corpus you
 prepared and account for where the compute went. Fine-tune a larger model under
 a fixed memory budget, prove the gain against a baseline you set beforehand, and
 show what capability it lost. Serve it with a latency budget and a cost model.
+Then, given a new problem you have not seen, produce a constraint sheet and a
+model choice record that names two rejected alternatives and the evidence that
+would reverse the decision.
 
 ---
 

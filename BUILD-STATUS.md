@@ -18,7 +18,7 @@ course/
 ├── 02-intermediate/    01-13            complete
 ├── 03-advanced/        14-30            14-25 complete, 26-30 pending
 ├── 04-system-design/   D01-D10, 31-36   outlines written, lessons pending
-└── 05-machine-learning/ M01-M19         outlines written, lessons pending
+└── 05-machine-learning/ M01-M21         outlines written, lessons pending
 ```
 
 Nothing was renumbered. Modules 01 to 36 keep the numbers they have always had,
@@ -118,26 +118,29 @@ and a stated link forward into Part 7.
 | 35 Reliability, Observability, Security | **not started** |
 | 36 Capstone | **not started** |
 
-### Level 05 — Machine Learning (Modules M01-M19)
+### Level 05 — Machine Learning (Modules M01-M21)
 
 Full curriculum outlines in place, in the same shape as the other new tracks
 plus two extra sections per module: **What you build**, which names the artefact
 the module produces, and **Compute budget**, which states the hardware needed
-and the CPU or hosted fallback. PyTorch throughout, Hugging Face from M16.
+and the CPU or hosted fallback. PyTorch throughout, Hugging Face from M17.
 
 | Part | Modules | State |
 |---|---|---|
-| 8 Foundations of Learning | M01-M04 | outlines **done**; lessons, notebooks, exercises pending |
-| 9 Deep Learning with PyTorch | M05-M10 | outlines **done**; rest pending |
-| 10 Generative Models | M11-M13 | outlines **done**; rest pending |
-| 11 Language Models and LLMs | M14-M19 | outlines **done**; rest pending |
+| 8 Foundations of Learning | M01-M05 | outlines **done**; lessons, notebooks, exercises pending |
+| 9 Deep Learning with PyTorch | M06-M11 | outlines **done**; rest pending |
+| 10 Generative Models | M12-M14 | outlines **done**; rest pending |
+| 11 Language Models and LLMs | M15-M21 | outlines **done**; rest pending |
 
-Two modules in this level are large builds rather than lessons: **M15**, which
-pretrains a small GPT end to end, and **M19**, the capstone. Both need reference
-implementations, a small corpus, and checked-in checkpoints so a learner without
-a GPU can still complete every stage.
+Three modules in this level need more than lesson prose. **M16** pretrains a
+small GPT end to end and needs a reference implementation, a small corpus, and
+checked-in checkpoints so a learner without a GPU can complete every stage.
+**M21** is the capstone. **M20** is unusual for this course in that its
+substance is a case bank rather than code: it needs thirty briefs with worked
+answers, and its model-landscape section is explicitly dated because it is the
+fastest-ageing content in the repository.
 
-### Appendix (`course/appendix/`) — all not started
+### Appendix (`course/appendix/`) — all not started### Appendix (`course/appendix/`) — all not started
 `glossary.md`, `idioms-and-pitfalls.md`, `debugging-and-tooling.md`,
 `testing.md`, `interview-questions.md`, `resources.md`, `cheatsheets.md`
 
@@ -155,10 +158,12 @@ the files completes the cross-references with no other edits.
 3. **D01 to D03.** These are the modules Part 7 depends on for its vocabulary.
 4. **26 to 30.** Finish Applied Python, which completes Level 03.
 5. **D04 to D10**, then **31 to 36**, then the appendix.
-6. **M01 to M07**, which is the ML level's own foundation, then **M10** and
-   **M15**, since the transformer build and the mini LLM are what the level is
-   for. M08, M09, and Part 10 can follow. M16 to M19 last, because they move
-   fastest and will need the most maintenance.
+6. **M01 to M08**, which is the ML level's own foundation, then **M11** and
+   **M16**, since the transformer build and the mini LLM are what the level is
+   for. M09, M10, and Part 10 can follow. M17 to M21 last, because they move
+   fastest and will need the most maintenance. Within that, **M20** should be
+   written after M18, since its ladder section depends on the fine-tuning
+   material.
 
 ---
 
@@ -210,6 +215,12 @@ and no forward references to material the learner has not met.
 - **ML modules build before they call.** Autodiff, backpropagation, attention,
   the transformer block, a tokeniser, and a language model are each implemented
   from scratch and checked numerically against the library version, which is why
-  the ecosystem module (M16) sits after the from-scratch build (M15).
+  the ecosystem module (M17) sits after the from-scratch build (M16).
 - **Every ML module states a compute budget** and ships a CPU or hosted fallback,
   so no exercise is gated on owning a GPU.
+- **The strongest baseline is built before the fancier method.** Module M05
+  produces a tuned gradient boosted model that Part 9 must beat, and Module M20
+  asks what the attempt proved.
+- **Content with a short shelf life is dated and isolated.** Module M20's model
+  landscape section is the clearest case: the decision procedure around it is
+  written to survive every model name in it being replaced.

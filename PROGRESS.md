@@ -128,36 +128,38 @@ one or two sentences without looking.
 | M02 | The Maths You Will Actually Use | | | | | |
 | M03 | Linear Models and Gradient Descent | | | | | |
 | M04 | Evaluation and the Experimental Loop | | | | | |
+| M05 | The Classical Toolbox | | | | | |
 
 ### Part 9 — Deep Learning with PyTorch
 
 | # | Module | Read | Exercises | Build | Quiz | Date |
 |---|---|---|---|---|---|---|
-| M05 | Tensors and Autograd | | | | | |
-| M06 | Neural Networks, Derived and Built | | | | | |
-| M07 | Training That Actually Works | | | | | |
-| M08 | Convolutional Networks and Vision | | | | | |
-| M09 | Sequences and Attention | | | | | |
-| M10 | The Transformer, Built from Parts | | | | | |
+| M06 | Tensors and Autograd | | | | | |
+| M07 | Neural Networks, Derived and Built | | | | | |
+| M08 | Training That Actually Works | | | | | |
+| M09 | Convolutional Networks and Vision | | | | | |
+| M10 | Sequences and Attention | | | | | |
+| M11 | The Transformer, Built from Parts | | | | | |
 
 ### Part 10 — Generative Models
 
 | # | Module | Read | Exercises | Build | Quiz | Date |
 |---|---|---|---|---|---|---|
-| M11 | Autoencoders and VAEs | | | | | |
-| M12 | Generative Adversarial Networks | | | | | |
-| M13 | Diffusion Models | | | | | |
+| M12 | Autoencoders and VAEs | | | | | |
+| M13 | Generative Adversarial Networks | | | | | |
+| M14 | Diffusion Models | | | | | |
 
 ### Part 11 — Language Models and LLMs
 
 | # | Module | Read | Exercises | Build | Quiz | Date |
 |---|---|---|---|---|---|---|
-| M14 | Tokenisation and Language Modelling | | | | | |
-| M15 | **Project: Build a Mini LLM** | | | | | |
-| M16 | Pretrained Models and the Ecosystem | | | | | |
-| M17 | Fine-tuning and Alignment | | | | | |
-| M18 | Serving, Evaluation, and Cost | | | | | |
-| M19 | **Capstone: Build, Fine-tune, Ship** | | | | | |
+| M15 | Tokenisation and Language Modelling | | | | | |
+| M16 | **Project: Build a Mini LLM** | | | | | |
+| M17 | Pretrained Models and the Ecosystem | | | | | |
+| M18 | Fine-tuning and Alignment | | | | | |
+| M19 | Serving, Evaluation, and Cost | | | | | |
+| M20 | Choosing an Approach | | | | | |
+| M21 | **Capstone: Build, Fine-tune, Ship** | | | | | |
 
 ---
 
@@ -175,7 +177,8 @@ one or two sentences without looking.
 | End of Part 7 | Design doc with load target, storage justification, three failure modes, and your own load-test numbers | |
 | End of Part 9 | Attention and a transformer block implemented from tensors, matching the reference numerically | |
 | End of Part 10 | A generative model trained to convergence, evaluated with a metric rather than by eye | |
-| End of Level 05 | A pretrained mini LLM, a fine-tune that beats a baseline you set beforehand, and a served model with a cost model | |
+| End of Part 8 | A gradient boosted baseline, tuned and recorded, that Part 9 has to beat | |
+| End of Level 05 | A pretrained mini LLM, a fine-tune that beats a baseline you set beforehand, a served model with a cost model, and a decision record for an unfamiliar problem | |
 
 ---
 
