@@ -46,7 +46,8 @@ like it makes sense.
 
 ## Setting up a notebook
 
-One notebook per **Part**, not per module. Six notebooks total. A notebook that
+One notebook per **Part**, not per module. Eight notebooks in total across the
+four levels, counting the beginner track as one. A notebook that
 holds a whole Part's sources produces better cross-references ("this is the same
 iterator protocol from Module 14, now driving the async for loop") than six
 isolated ones.
@@ -210,53 +211,88 @@ in `solutions/`.
 
 ## Index of prompt files
 
+### Level 01 — Beginner
+The beginner modules ship their prompt files in the same build pass as their
+lessons. Until then, generate visuals for a beginner module by pasting its
+README into a notebook and asking for a mind map and a study guide only. Skip
+the cinematic video at this level; at the beginning, typing beats watching.
+
+- [B01 Your First Program and How Python Runs It](01-beginner/b01-first-program-and-the-interpreter/README.md)
+- [B02 Data, Names, and Types](01-beginner/b02-data-names-and-types/README.md)
+- [B03 Making Decisions](01-beginner/b03-making-decisions/README.md)
+- [B04 Repeating Work: Loops](01-beginner/b04-loops-and-repetition/README.md)
+- [B05 Collections](01-beginner/b05-collections/README.md)
+- [B06 Functions](01-beginner/b06-functions/README.md)
+- [B07 Working with Text](01-beginner/b07-working-with-text/README.md)
+- [B08 Files and Folders](01-beginner/b08-files-and-folders/README.md)
+- [B09 Errors and Debugging](01-beginner/b09-errors-and-debugging/README.md)
+- [B10 Organising Code](01-beginner/b10-organising-code/README.md)
+- [B11 A First Look at Objects and Classes](01-beginner/b11-first-look-at-classes/README.md)
+- [B12 Project: Expense Tracker CLI](01-beginner/b12-project-expense-tracker/README.md)
+
 ### Part 1 — Foundations
-- [01 The Runtime and the Toolchain](part-1-foundations/01-runtime-and-toolchain/VISUALS.prompt.md)
-- [02 Objects, Names, and the Data Model](part-1-foundations/02-objects-names-data-model/VISUALS.prompt.md)
-- [03 Core Types and Their Behaviour](part-1-foundations/03-core-types/VISUALS.prompt.md)
-- [04 Control Flow, Functions, and Scope](part-1-foundations/04-control-flow-and-functions/VISUALS.prompt.md)
-- [05 Collections and Comprehensions](part-1-foundations/05-collections-and-comprehensions/VISUALS.prompt.md)
-- [06 Modules, Packages, and Project Layout](part-1-foundations/06-modules-packages-projects/VISUALS.prompt.md)
-- [07 Project: Inventory CLI](part-1-foundations/07-project-inventory-cli/VISUALS.prompt.md)
+- [01 The Runtime and the Toolchain](02-intermediate/part-1-foundations/01-runtime-and-toolchain/VISUALS.prompt.md)
+- [02 Objects, Names, and the Data Model](02-intermediate/part-1-foundations/02-objects-names-data-model/VISUALS.prompt.md)
+- [03 Core Types and Their Behaviour](02-intermediate/part-1-foundations/03-core-types/VISUALS.prompt.md)
+- [04 Control Flow, Functions, and Scope](02-intermediate/part-1-foundations/04-control-flow-and-functions/VISUALS.prompt.md)
+- [05 Collections and Comprehensions](02-intermediate/part-1-foundations/05-collections-and-comprehensions/VISUALS.prompt.md)
+- [06 Modules, Packages, and Project Layout](02-intermediate/part-1-foundations/06-modules-packages-projects/VISUALS.prompt.md)
+- [07 Project: Inventory CLI](02-intermediate/part-1-foundations/07-project-inventory-cli/VISUALS.prompt.md)
 
 ### Part 2 — Object-Oriented Python
-- [08 Classes and Encapsulation](part-2-oop/08-classes-and-encapsulation/VISUALS.prompt.md)
-- [09 The Data Model: Dunder Methods](part-2-oop/09-dunder-and-data-model/VISUALS.prompt.md)
-- [10 Inheritance, Composition, and the MRO](part-2-oop/10-inheritance-composition-mro/VISUALS.prompt.md)
-- [11 Dataclasses, Enums, and Value Semantics](part-2-oop/11-dataclasses-and-value-semantics/VISUALS.prompt.md)
-- [12 Design Principles in Python](part-2-oop/12-design-principles-in-python/VISUALS.prompt.md)
-- [13 Project: Plugin Document Pipeline](part-2-oop/13-project-plugin-pipeline/VISUALS.prompt.md)
+- [08 Classes and Encapsulation](02-intermediate/part-2-oop/08-classes-and-encapsulation/VISUALS.prompt.md)
+- [09 The Data Model: Dunder Methods](02-intermediate/part-2-oop/09-dunder-and-data-model/VISUALS.prompt.md)
+- [10 Inheritance, Composition, and the MRO](02-intermediate/part-2-oop/10-inheritance-composition-mro/VISUALS.prompt.md)
+- [11 Dataclasses, Enums, and Value Semantics](02-intermediate/part-2-oop/11-dataclasses-and-value-semantics/VISUALS.prompt.md)
+- [12 Design Principles in Python](02-intermediate/part-2-oop/12-design-principles-in-python/VISUALS.prompt.md)
+- [13 Project: Plugin Document Pipeline](02-intermediate/part-2-oop/13-project-plugin-pipeline/VISUALS.prompt.md)
 
 ### Part 3 — Idiomatic and Advanced Python
-- [14 Iterators, Generators, and Lazy Pipelines](part-3-advanced/14-iterators-and-generators/VISUALS.prompt.md)
-- [15 Decorators, Closures, and functools](part-3-advanced/15-decorators-closures-functools/VISUALS.prompt.md)
-- [16 Error Handling and Robustness](part-3-advanced/16-error-handling-and-robustness/VISUALS.prompt.md)
-- [17 Typing and Static Analysis](part-3-advanced/17-typing-and-static-analysis/VISUALS.prompt.md)
-- [18 Testing, Debugging, and Quality](part-3-advanced/18-testing-and-quality/VISUALS.prompt.md)
-- [19 The Standard Library, Files, and Serialization](part-3-advanced/19-stdlib-files-serialization/VISUALS.prompt.md)
-- [20 Project: A Packaged Library and CLI](part-3-advanced/20-project-library-and-cli/VISUALS.prompt.md)
+- [14 Iterators, Generators, and Lazy Pipelines](03-advanced/part-3-advanced/14-iterators-and-generators/VISUALS.prompt.md)
+- [15 Decorators, Closures, and functools](03-advanced/part-3-advanced/15-decorators-closures-functools/VISUALS.prompt.md)
+- [16 Error Handling and Robustness](03-advanced/part-3-advanced/16-error-handling-and-robustness/VISUALS.prompt.md)
+- [17 Typing and Static Analysis](03-advanced/part-3-advanced/17-typing-and-static-analysis/VISUALS.prompt.md)
+- [18 Testing, Debugging, and Quality](03-advanced/part-3-advanced/18-testing-and-quality/VISUALS.prompt.md)
+- [19 The Standard Library, Files, and Serialization](03-advanced/part-3-advanced/19-stdlib-files-serialization/VISUALS.prompt.md)
+- [20 Project: A Packaged Library and CLI](03-advanced/part-3-advanced/20-project-library-and-cli/VISUALS.prompt.md)
 
 ### Part 4 — Concurrency, Performance, and Internals
-- [21 The GIL, Threads, and Processes](part-4-concurrency/21-gil-threads-processes/VISUALS.prompt.md)
-- [22 Asyncio](part-4-concurrency/22-asyncio/VISUALS.prompt.md)
-- [23 Performance and Profiling](part-4-concurrency/23-performance-and-profiling/VISUALS.prompt.md)
-- [24 CPython Internals](part-4-concurrency/24-cpython-internals/VISUALS.prompt.md)
+- [21 The GIL, Threads, and Processes](03-advanced/part-4-concurrency/21-gil-threads-processes/VISUALS.prompt.md)
+- [22 Asyncio](03-advanced/part-4-concurrency/22-asyncio/VISUALS.prompt.md)
+- [23 Performance and Profiling](03-advanced/part-4-concurrency/23-performance-and-profiling/VISUALS.prompt.md)
+- [24 CPython Internals](03-advanced/part-4-concurrency/24-cpython-internals/VISUALS.prompt.md)
 
 ### Part 5 — Applied Python
-- [25 Automation, Scripting, and the OS](part-5-applied/25-automation-and-os/VISUALS.prompt.md)
-- [26 HTTP, APIs, and Scraping](part-5-applied/26-http-and-scraping/VISUALS.prompt.md)
-- [27 Databases and Persistence](part-5-applied/27-databases-and-persistence/VISUALS.prompt.md)
-- [28 Building APIs with FastAPI](part-5-applied/28-apis-with-fastapi/VISUALS.prompt.md)
-- [29 Data and ML Foundations](part-5-applied/29-data-and-ml-foundations/VISUALS.prompt.md)
-- [30 Packaging, Deployment, and Ops](part-5-applied/30-packaging-and-deployment/VISUALS.prompt.md)
+- [25 Automation, Scripting, and the OS](03-advanced/part-5-applied/25-automation-and-os/VISUALS.prompt.md)
+- [26 HTTP, APIs, and Scraping](03-advanced/part-5-applied/26-http-and-scraping/VISUALS.prompt.md)
+- [27 Databases and Persistence](03-advanced/part-5-applied/27-databases-and-persistence/VISUALS.prompt.md)
+- [28 Building APIs with FastAPI](03-advanced/part-5-applied/28-apis-with-fastapi/VISUALS.prompt.md)
+- [29 Data and ML Foundations](03-advanced/part-5-applied/29-data-and-ml-foundations/VISUALS.prompt.md)
+- [30 Packaging, Deployment, and Ops](03-advanced/part-5-applied/30-packaging-and-deployment/VISUALS.prompt.md)
 
-### Part 6 — System Design with Python
-- [31 Design Fundamentals](part-6-system-design/31-design-fundamentals/VISUALS.prompt.md)
-- [32 Service Architecture and Concurrency Models](part-6-system-design/32-service-architecture/VISUALS.prompt.md)
-- [33 Caching, Queues, and Background Jobs](part-6-system-design/33-caching-queues-jobs/VISUALS.prompt.md)
-- [34 Data at Scale](part-6-system-design/34-data-at-scale/VISUALS.prompt.md)
-- [35 Reliability, Observability, and Security](part-6-system-design/35-reliability-observability-security/VISUALS.prompt.md)
-- [36 Capstone](part-6-system-design/36-capstone/VISUALS.prompt.md)
+### Part 6 — Data Structures and Algorithms
+Prompt files ship with these lessons in a later build pass. The visuals worth
+demanding here are structural: the memory layout of a list, a hash collision
+resolving, a tree rebalancing, a BFS frontier expanding ring by ring.
+
+- [D01 Complexity and Measuring Cost](04-system-design/part-6-data-structures-and-algorithms/d01-complexity-and-measurement/README.md)
+- [D02 Arrays and Dynamic Arrays](04-system-design/part-6-data-structures-and-algorithms/d02-arrays-and-dynamic-arrays/README.md)
+- [D03 Hash Tables](04-system-design/part-6-data-structures-and-algorithms/d03-hash-tables/README.md)
+- [D04 Linked Lists, Stacks, and Queues](04-system-design/part-6-data-structures-and-algorithms/d04-linked-structures/README.md)
+- [D05 Trees and Heaps](04-system-design/part-6-data-structures-and-algorithms/d05-trees-and-heaps/README.md)
+- [D06 Graphs](04-system-design/part-6-data-structures-and-algorithms/d06-graphs/README.md)
+- [D07 Sorting and Searching](04-system-design/part-6-data-structures-and-algorithms/d07-sorting-and-searching/README.md)
+- [D08 Recursion, Backtracking, and Divide and Conquer](04-system-design/part-6-data-structures-and-algorithms/d08-recursion-and-divide-and-conquer/README.md)
+- [D09 Dynamic Programming and Greedy](04-system-design/part-6-data-structures-and-algorithms/d09-dynamic-programming-and-greedy/README.md)
+- [D10 Patterns, Drills, and the Bridge to System Design](04-system-design/part-6-data-structures-and-algorithms/d10-patterns-and-design-bridge/README.md)
+
+### Part 7 — System Design with Python
+- [31 Design Fundamentals](04-system-design/part-7-system-design/31-design-fundamentals/VISUALS.prompt.md)
+- [32 Service Architecture and Concurrency Models](04-system-design/part-7-system-design/32-service-architecture/VISUALS.prompt.md)
+- [33 Caching, Queues, and Background Jobs](04-system-design/part-7-system-design/33-caching-queues-jobs/VISUALS.prompt.md)
+- [34 Data at Scale](04-system-design/part-7-system-design/34-data-at-scale/VISUALS.prompt.md)
+- [35 Reliability, Observability, and Security](04-system-design/part-7-system-design/35-reliability-observability-security/VISUALS.prompt.md)
+- [36 Capstone](04-system-design/part-7-system-design/36-capstone/VISUALS.prompt.md)
 
 ---
 
