@@ -331,4 +331,4 @@ python setup/verify.py
 ```
 
 Then open
-[`course/part-1-foundations/01-runtime-and-toolchain/README.md`](course/part-1-foundations/01-runtime-and-toolchain/README.md).
+[`course/02-intermediate/part-1-foundations/01-runtime-and-toolchain/README.md`](course/02-intermediate/part-1-foundations/01-runtime-and-toolchain/README.md).

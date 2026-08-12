@@ -1,45 +1,58 @@
-# Python Mastery: From the Data Model to System Design
+# Python Mastery: From Your First Program to System Design
 
-A complete, self-paced training course built for one student: you.
+A complete, self-paced Python course in four levels, from someone who has never
+written a line of code to someone who can design, build, instrument, and defend
+a production service.
 
-This course takes you from what actually happens when you type `python app.py`
-all the way to designing, building, and load-testing a production service. It is
-calibrated for someone who already programs comfortably in another language, so
-it does not spend a chapter explaining what a `for` loop is. It spends that
-chapter explaining why Python's `for` loop is a protocol, not a construct, and
-what you can build once you know that.
+It began as one course for one student, calibrated for an experienced
+programmer. By request it is now four, so that a beginner, an improver, an
+experienced engineer, and someone brushing up before an interview can each
+start in the right place and take the same path from there.
 
 ---
 
-## Who this is calibrated for
+## The four levels
 
-| Dimension | Setting |
+```
+course/
+├── 01-beginner/        12 modules   B01-B12          10 weeks   6-8 h/week
+├── 02-intermediate/    13 modules   01-13            8 weeks    10-15 h/week
+├── 03-advanced/        17 modules   14-30            12 weeks   10-15 h/week
+└── 04-system-design/   16 modules   D01-D10, 31-36   10 weeks   10-15 h/week
+```
+
+| Level | What it is for |
 |---|---|
-| Prior experience | Comfortable coder. You have shipped something in some language. |
-| Python experience | Anywhere from none to "I can write a script" |
-| Time budget | 10 to 15 hours per week |
-| Duration | 20 weeks (5 months) |
-| End goals | Backend/API engineering, data and ML foundations, automation and tooling, then system design |
-| Python version | 3.12+ (3.13 features flagged where used; 3.10 fallbacks noted) |
+| **[01 Beginner](course/01-beginner/README.md)** | Programming from zero. What a program is, data, decisions, loops, collections, functions, text, files, errors, modules, a first class, and a finished CLI project. |
+| **[02 Intermediate](course/02-intermediate/README.md)** | What the interpreter is actually doing, and how to model problems with types the Python way. Foundations and object-oriented Python. |
+| **[03 Advanced](course/03-advanced/README.md)** | Code that survives review and load. Generators, decorators, typing, testing, concurrency, profiling, CPython internals, then applied work: automation, HTTP, databases, FastAPI, data, deployment. |
+| **[04 System Design](course/04-system-design/README.md)** | Data structures and algorithms first, then architecture: estimation, service models, caching and queues, data at scale, reliability, and a capstone. |
+
+Full detail, week by week, is in [`CURRICULUM.md`](CURRICULUM.md).
 
 ---
 
-## The shape of the course
+## Where should you start?
+
+| If this describes you | Start at |
+|---|---|
+| You have never written code | [Module B01](course/01-beginner/b01-first-program-and-the-interpreter/README.md) |
+| You program in another language, but not Python | [Module 01](course/02-intermediate/part-1-foundations/01-runtime-and-toolchain/README.md) |
+| You write Python scripts but could not explain what `b = a` does to the object | [Module 02](course/02-intermediate/part-1-foundations/02-objects-names-data-model/README.md) |
+| You are fluent with classes, generators, and decorators | [Module 14](course/03-advanced/part-3-advanced/14-iterators-and-generators/README.md) |
+| You ship production Python and want scale and interview readiness | [Module D01](course/04-system-design/part-6-data-structures-and-algorithms/d01-complexity-and-measurement/README.md) |
+
+Two honest self-tests before skipping a level. If you cannot explain why
+`a = [1,2]; b = a; b.append(3)` changes `a` in terms of names and objects, do
+not skip Intermediate. If you cannot say what `functools.wraps` protects, do not
+skip Advanced.
+
+---
+
+## What every module looks like
 
 ```
-Part 1  Foundations                   Weeks 1-4      Modules 01-07
-Part 2  Object-Oriented Python        Weeks 5-8      Modules 08-13
-Part 3  Idiomatic and Advanced        Weeks 9-13     Modules 14-20
-Part 4  Concurrency and Internals     Weeks 14-15    Modules 21-24
-Part 5  Applied Python                Weeks 16-18    Modules 25-30
-Part 6  System Design with Python     Weeks 19-20    Modules 31-36
-Appendix  Reference material          Ongoing
-```
-
-Every one of the 36 modules has the same layout:
-
-```
-NN-module-name/
+module-name/
 ├── README.md            The lesson: concepts, annotated code, mental models,
 │                        common mistakes, and a self-check quiz
 ├── VISUALS.prompt.md    Paste-ready NotebookLM prompts: video explainer,
@@ -76,7 +89,7 @@ producing the *illusion* of understanding. Only the interpreter tells the truth.
 7. Take the self-check quiz at the bottom of the README. If you cannot answer a
    question in one or two sentences, go back to that section.
 
-**Do not skip the milestone projects** (modules 07, 13, 20, 36). They are where
+**Do not skip the milestone projects** (B12, 07, 13, 20, 36). They are where
 isolated concepts fuse into working knowledge. A module you can pass a quiz on
 but cannot use in a project, you do not know.
 
@@ -89,15 +102,15 @@ in the repo, because it is a map of your own blind spots.
 
 ## Getting started
 
-1. Read [`SETUP.md`](SETUP.md) and get your environment working. Do not skip the
-   linter and type-checker setup. In a dynamically typed language, tooling is
-   the safety net that the compiler gives other languages.
+1. Read [`SETUP.md`](SETUP.md) and get your environment working. Beginners can
+   stop after the first two sections; everyone else should also set up the
+   linter and type checker. In a dynamically typed language, tooling is the
+   safety net that the compiler gives other languages.
 2. Skim [`CURRICULUM.md`](CURRICULUM.md) so you know where you are headed.
 3. Skim [`course/VISUAL-GUIDE.md`](course/VISUAL-GUIDE.md). Every module ships a
    `VISUALS.prompt.md` you can paste into NotebookLM to generate a video
    explainer, a mind map, and a study guide for that module.
-4. Open [`course/part-1-foundations/01-runtime-and-toolchain/README.md`](course/part-1-foundations/01-runtime-and-toolchain/README.md)
-   and begin.
+4. Open the level README for wherever you are starting, and begin.
 5. Track yourself in [`PROGRESS.md`](PROGRESS.md).
 
 ---
@@ -108,13 +121,13 @@ These are the habits that separate people who write Python from people who are
 trusted with Python.
 
 - **One virtual environment per project. Always.** Never `pip install` into your
-  system Python. Module 01 sets this up and Module 30 explains the packaging
-  model underneath it.
+  system Python. Modules B10 and 01 set this up, and Module 30 explains the
+  packaging model underneath it.
 - **Type-hint every function you write in this course.** Not because Python
   needs it, but because writing the type forces you to decide what the function
   actually accepts and returns. Run the type checker.
-- **Never catch bare `except:`.** Catch the exception you expect. Module 16
-  explains exactly what a bare except swallows and why it will cost you an
+- **Never catch bare `except:`.** Catch the exception you expect. Modules B09
+  and 16 explain exactly what a bare except swallows and why it will cost you an
   afternoon eventually.
 - **Never use a mutable default argument.** `def f(items=[])` is the single most
   common Python bug in the world. Module 04 shows you why it happens.
@@ -132,9 +145,10 @@ trusted with Python.
 
 ## What "knowing Python" means here
 
-By the end of this course you should be able to do all of the following without
-looking anything up:
+By the end of the full path you should be able to do all of the following
+without looking anything up:
 
+- Write, run, debug, and finish a small program on your own, from a blank file.
 - Explain why `a = [1,2]; b = a; b.append(3)` changes `a`, in terms of names and
   objects rather than "pass by reference".
 - Write a class that behaves correctly under `==`, `in`, `len()`, iteration,
@@ -147,5 +161,6 @@ looking anything up:
 - Profile a slow program and produce evidence for what is slow before changing
   anything.
 - Build, test, package, containerise and deploy a FastAPI service.
+- State the complexity of your own code, and prove it with a measurement.
 - Take an open-ended design prompt, estimate its load, sketch the architecture,
   name the failure modes, and say what you would build first.

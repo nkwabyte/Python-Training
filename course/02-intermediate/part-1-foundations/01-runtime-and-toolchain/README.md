@@ -1,11 +1,11 @@
 # Module 01 — The Runtime and the Toolchain
 
 **Time budget:** 3 hours lesson, 4 hours exercises
-**Prerequisite:** [`SETUP.md`](../../../SETUP.md) completed, `python setup/verify.py` passing
+**Prerequisite:** [`SETUP.md`](../../../../SETUP.md) completed, `python setup/verify.py` passing
 
 > **Visual companion:** [`VISUALS.prompt.md`](VISUALS.prompt.md) has ready-to-paste
 > NotebookLM prompts for a video explainer, mind map, and study guide on this
-> module. See [`course/VISUAL-GUIDE.md`](../../VISUAL-GUIDE.md) for the workflow.
+> module. See [`course/VISUAL-GUIDE.md`](../../../VISUAL-GUIDE.md) for the workflow.
 
 ---
 
