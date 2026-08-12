@@ -12,6 +12,25 @@ and after three months it will be the most useful file in this repository.
 Mark each cell when done. "Quiz" means you answered every self-check question in
 one or two sentences without looking.
 
+### Level 01 — Beginner
+
+| # | Module | Read | Exercises | Project | Quiz | Date |
+|---|---|---|---|---|---|---|
+| B01 | First Program and the Interpreter | | | | | |
+| B02 | Data, Names, and Types | | | | | |
+| B03 | Making Decisions | | | | | |
+| B04 | Loops and Repetition | | | | | |
+| B05 | Collections | | | | | |
+| B06 | Functions | | | | | |
+| B07 | Working with Text | | | | | |
+| B08 | Files and Folders | | | | | |
+| B09 | Errors and Debugging | | | | | |
+| B10 | Organising Code | | | | | |
+| B11 | A First Look at Classes | | | | | |
+| B12 | **Project: Expense Tracker CLI** | | | | | |
+
+## Level 02 — Intermediate
+
 ### Part 1 — Foundations
 
 | # | Module | Read | Visuals | Exercises | Quiz | Date |
@@ -34,6 +53,8 @@ one or two sentences without looking.
 | 11 | Dataclasses and Value Semantics | | | | | |
 | 12 | Design Principles | | | | | |
 | 13 | **Project: Plugin Pipeline** | | | | | |
+
+## Level 03 — Advanced
 
 ### Part 3 — Idiomatic and Advanced
 
@@ -67,7 +88,24 @@ one or two sentences without looking.
 | 29 | Data and ML Foundations | | | | | |
 | 30 | Packaging and Deployment | | | | | |
 
-### Part 6 — System Design
+## Level 04 — System Design
+
+### Part 6 — Data Structures and Algorithms
+
+| # | Module | Read | Exercises | Drills | Quiz | Date |
+|---|---|---|---|---|---|---|
+| D01 | Complexity and Measurement | | | | | |
+| D02 | Arrays and Dynamic Arrays | | | | | |
+| D03 | Hash Tables | | | | | |
+| D04 | Linked Structures | | | | | |
+| D05 | Trees and Heaps | | | | | |
+| D06 | Graphs | | | | | |
+| D07 | Sorting and Searching | | | | | |
+| D08 | Recursion and Divide and Conquer | | | | | |
+| D09 | Dynamic Programming and Greedy | | | | | |
+| D10 | Patterns and the Design Bridge | | | | | |
+
+### Part 7 — System Design
 
 | # | Module | Read | Visuals | Exercises | Quiz | Date |
 |---|---|---|---|---|---|---|
@@ -80,16 +118,67 @@ one or two sentences without looking.
 
 ---
 
+## Level 05 — Machine Learning
+
+### Part 8 — Foundations of Learning
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M01 | What Learning Is | | | | | |
+| M02 | The Maths You Will Actually Use | | | | | |
+| M03 | Linear Models and Gradient Descent | | | | | |
+| M04 | Evaluation and the Experimental Loop | | | | | |
+| M05 | The Classical Toolbox | | | | | |
+
+### Part 9 — Deep Learning with PyTorch
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M06 | Tensors and Autograd | | | | | |
+| M07 | Neural Networks, Derived and Built | | | | | |
+| M08 | Training That Actually Works | | | | | |
+| M09 | Convolutional Networks and Vision | | | | | |
+| M10 | Sequences and Attention | | | | | |
+| M11 | The Transformer, Built from Parts | | | | | |
+
+### Part 10 — Generative Models
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M12 | Autoencoders and VAEs | | | | | |
+| M13 | Generative Adversarial Networks | | | | | |
+| M14 | Diffusion Models | | | | | |
+
+### Part 11 — Language Models and LLMs
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M15 | Tokenisation and Language Modelling | | | | | |
+| M16 | **Project: Build a Mini LLM** | | | | | |
+| M17 | Pretrained Models and the Ecosystem | | | | | |
+| M18 | Fine-tuning and Alignment | | | | | |
+| M19 | Serving, Evaluation, and Cost | | | | | |
+| M20 | Choosing an Approach | | | | | |
+| M21 | **Capstone: Build, Fine-tune, Ship** | | | | | |
+
+---
+
 ## Checkpoint gates
 
 | Gate | Requirement | Passed |
 |---|---|---|
+| End of Level 01 | A program of your own that reads input, stores it in a file, survives a restart, validates everything, and prints a report | |
 | End of Part 1 | Multi-module CLI, runs with `python -m`, validates input, meaningful exit codes | |
 | End of Part 2 | A class supporting `==`, `hash()`, ordering, iteration, `len()`, `in`, `with`, good `repr`, every dunder justified | |
 | End of Part 3 | Typed, tested, packaged library. mypy clean, 90 percent coverage | |
 | End of Part 4 | Profiled a slow program, fixed it, proved the fix with a benchmark | |
 | End of Part 5 | FastAPI service with DB, migrations, tests, Dockerfile, CI + a reproducible analysis notebook | |
-| End of Part 6 | Design doc with load target, storage justification, three failure modes, and your own load-test numbers | |
+| End of Part 6 | For a given system requirement, choose the data structure, state its complexity, and defend the choice | |
+| End of Part 7 | Design doc with load target, storage justification, three failure modes, and your own load-test numbers | |
+| End of Part 9 | Attention and a transformer block implemented from tensors, matching the reference numerically | |
+| End of Part 10 | A generative model trained to convergence, evaluated with a metric rather than by eye | |
+| End of Part 8 | A gradient boosted baseline, tuned and recorded, that Part 9 has to beat | |
+| End of Level 05 | A pretrained mini LLM, a fine-tune that beats a baseline you set beforehand, a served model with a cost model, and a decision record for an unfamiliar problem | |
 
 ---
 
@@ -130,4 +219,4 @@ are moving too fast to retain anything.
 
 | Week | Planned modules | Actual hours | Notes |
 |---|---|---|---|
-| 1 | 01, 02 | | |
+| 1 | B01, B02 (or 01, 02 if starting at Intermediate) | | |

@@ -3,13 +3,34 @@
 The course is built module-by-module. This file records exactly what exists so
 work can resume without re-deriving anything.
 
-**Last updated:** 2026-08-03
+**Last updated:** 2026-08-12
+
+---
+
+## Structure
+
+The course was reorganised from six flat parts into four levels, so that
+learners can enter at the right point:
+
+```
+course/
+├── 01-beginner/        B01-B12          curriculum outlines written, lessons pending
+├── 02-intermediate/    01-13            complete
+├── 03-advanced/        14-30            14-25 complete, 26-30 pending
+├── 04-system-design/   D01-D10, 31-36   outlines written, lessons pending
+└── 05-machine-learning/ M01-M21         outlines written, lessons pending
+```
+
+Nothing was renumbered. Modules 01 to 36 keep the numbers they have always had,
+and every cross-reference in the existing lessons still resolves. The three new
+tracks use their own prefixes: `B` for beginner, `D` for data structures and
+algorithms, and `M` for machine learning.
 
 ---
 
 ## Complete and verified (Modules 01-24)
 
-Parts 1-4 are finished. Every module has:
+Every module in Levels 02 and the first two parts of Level 03 has:
 
 - `README.md` — the full lesson: concepts, annotated code, mental models,
   a common-mistakes table, a 10-question self-check quiz, exercises index,
@@ -20,22 +41,45 @@ Parts 1-4 are finished. Every module has:
 - `exercises/` — hands-on files with TODOs and embedded tests
 - `solutions/` — worked solutions and/or a `SOLUTIONS.md` discussion
 
-| Part | Modules | State |
-|---|---|---|
-| 1 Foundations | 01-07 | **Complete.** All solution code executed and passing. Module 07's Inventory CLI reference implementation has 85 passing tests. |
-| 2 Object-Oriented Python | 08-13 | **Complete.** All runnable solutions verified. |
-| 3 Idiomatic and Advanced | 14-20 | **Complete.** All runnable solutions verified. |
-| 4 Concurrency and Internals | 21-24 | **Complete.** Labs verified on 3.10; 3.11+ features flagged where used. |
+| Level | Part | Modules | State |
+|---|---|---|---|
+| 02 Intermediate | 1 Foundations | 01-07 | **Complete.** All solution code executed and passing. Module 07's Inventory CLI reference implementation has 85 passing tests. |
+| 02 Intermediate | 2 Object-Oriented Python | 08-13 | **Complete.** All runnable solutions verified. |
+| 03 Advanced | 3 Idiomatic and Advanced | 14-20 | **Complete.** All runnable solutions verified. |
+| 03 Advanced | 4 Concurrency and Internals | 21-24 | **Complete.** Labs verified on 3.10; 3.11+ features flagged where used. |
 
 Root files complete: `README.md`, `CURRICULUM.md`, `SETUP.md`, `PROGRESS.md`,
 `pyproject.toml`, `requirements-dev.txt`, `.gitignore`, `setup/verify.py`,
-`course/VISUAL-GUIDE.md`.
+`course/VISUAL-GUIDE.md`, and a README for each of the four levels.
 
 ---
 
 ## Remaining
 
-### Part 5 — Applied Python
+### Level 01 — Beginner (Modules B01-B12)
+
+Every module has a **curriculum outline** in place: why the module exists, the
+learning outcomes, the numbered concept sections, the exercise list with what
+each drills, the common mistakes to address, the self-check questions, and the
+further reading. What remains is writing the lesson prose, the exercise files,
+and the solutions against those outlines.
+
+| Module | State |
+|---|---|
+| B01 First Program and the Interpreter | outline **done**; lesson, exercises, solutions pending |
+| B02 Data, Names, and Types | outline **done**; rest pending |
+| B03 Making Decisions | outline **done**; rest pending |
+| B04 Loops and Repetition | outline **done**; rest pending |
+| B05 Collections | outline **done**; rest pending |
+| B06 Functions | outline **done**; rest pending |
+| B07 Working with Text | outline **done**; rest pending |
+| B08 Files and Folders | outline **done**; rest pending |
+| B09 Errors and Debugging | outline **done**; rest pending |
+| B10 Organising Code | outline **done**; rest pending |
+| B11 A First Look at Classes | outline **done**; rest pending |
+| B12 Project: Expense Tracker CLI | outline **done**; six-stage build pending |
+
+### Level 03 — Advanced, Part 5 Applied Python
 | Module | State |
 |---|---|
 | 25 Automation and the OS | README + VISUALS **done**; exercises partial (ex02 written) |
@@ -45,7 +89,26 @@ Root files complete: `README.md`, `CURRICULUM.md`, `SETUP.md`, `PROGRESS.md`,
 | 29 Data and ML Foundations | **not started** |
 | 30 Packaging, Deployment, Ops | **not started** |
 
-### Part 6 — System Design with Python
+### Level 04 — Part 6, Data Structures and Algorithms (D01-D10)
+
+As with the beginner track, every module has a full curriculum outline, plus a
+"The Python angle" section tying it to the modules the learner has already done
+and a stated link forward into Part 7.
+
+| Module | State |
+|---|---|
+| D01 Complexity and Measurement | outline **done**; rest pending |
+| D02 Arrays and Dynamic Arrays | outline **done**; rest pending |
+| D03 Hash Tables | outline **done**; rest pending |
+| D04 Linked Structures | outline **done**; rest pending |
+| D05 Trees and Heaps | outline **done**; rest pending |
+| D06 Graphs | outline **done**; rest pending |
+| D07 Sorting and Searching | outline **done**; rest pending |
+| D08 Recursion and Divide and Conquer | outline **done**; rest pending |
+| D09 Dynamic Programming and Greedy | outline **done**; rest pending |
+| D10 Patterns and the Design Bridge | outline **done**; rest pending |
+
+### Level 04 — Part 7, System Design with Python
 | Module | State |
 |---|---|
 | 31 Design Fundamentals | **not started** |
@@ -55,7 +118,29 @@ Root files complete: `README.md`, `CURRICULUM.md`, `SETUP.md`, `PROGRESS.md`,
 | 35 Reliability, Observability, Security | **not started** |
 | 36 Capstone | **not started** |
 
-### Appendix (`course/appendix/`) — all not started
+### Level 05 — Machine Learning (Modules M01-M21)
+
+Full curriculum outlines in place, in the same shape as the other new tracks
+plus two extra sections per module: **What you build**, which names the artefact
+the module produces, and **Compute budget**, which states the hardware needed
+and the CPU or hosted fallback. PyTorch throughout, Hugging Face from M17.
+
+| Part | Modules | State |
+|---|---|---|
+| 8 Foundations of Learning | M01-M05 | outlines **done**; lessons, notebooks, exercises pending |
+| 9 Deep Learning with PyTorch | M06-M11 | outlines **done**; rest pending |
+| 10 Generative Models | M12-M14 | outlines **done**; rest pending |
+| 11 Language Models and LLMs | M15-M21 | outlines **done**; rest pending |
+
+Three modules in this level need more than lesson prose. **M16** pretrains a
+small GPT end to end and needs a reference implementation, a small corpus, and
+checked-in checkpoints so a learner without a GPU can complete every stage.
+**M21** is the capstone. **M20** is unusual for this course in that its
+substance is a case bank rather than code: it needs thirty briefs with worked
+answers, and its model-landscape section is explicitly dated because it is the
+fastest-ageing content in the repository.
+
+### Appendix (`course/appendix/`) — all not started### Appendix (`course/appendix/`) — all not started
 `glossary.md`, `idioms-and-pitfalls.md`, `debugging-and-tooling.md`,
 `testing.md`, `interview-questions.md`, `resources.md`, `cheatsheets.md`
 
@@ -65,9 +150,28 @@ the files completes the cross-references with no other edits.
 
 ---
 
+## Suggested build order
+
+1. **B01 to B06.** The beginner track is the reason for the restructure, and the
+   first six modules are the ones a new learner hits first.
+2. **B07 to B12.** Finish the level, project included, so it can be used.
+3. **D01 to D03.** These are the modules Part 7 depends on for its vocabulary.
+4. **26 to 30.** Finish Applied Python, which completes Level 03.
+5. **D04 to D10**, then **31 to 36**, then the appendix.
+6. **M01 to M08**, which is the ML level's own foundation, then **M11** and
+   **M16**, since the transformer build and the mini LLM are what the level is
+   for. M09, M10, and Part 10 can follow. M17 to M21 last, because they move
+   fastest and will need the most maintenance. Within that, **M20** should be
+   written after M18, since its ladder section depends on the fine-tuning
+   material.
+
+---
+
 ## The template each remaining module follows
 
 Copy the shape of any completed module — Module 16 or 21 are good references.
+For beginner modules, keep the same structure but shorter sections, more code,
+and no forward references to material the learner has not met.
 
 **README.md**
 1. Time budget, prerequisite, link to the visual companion
@@ -103,3 +207,20 @@ Copy the shape of any completed module — Module 16 or 21 are good references.
   and later modules reuse earlier diagrams deliberately.
 - Every measurement claim in the text was produced by actually running the
   benchmark, not estimated.
+- **Beginner modules teach nothing that must later be unlearned.** A name is a
+  label, never a box. Type hints and narrow exception handling appear from the
+  start.
+- **DSA modules pair every complexity claim with a measurement**, because
+  Python's constant factors are large enough that theory alone misleads.
+- **ML modules build before they call.** Autodiff, backpropagation, attention,
+  the transformer block, a tokeniser, and a language model are each implemented
+  from scratch and checked numerically against the library version, which is why
+  the ecosystem module (M17) sits after the from-scratch build (M16).
+- **Every ML module states a compute budget** and ships a CPU or hosted fallback,
+  so no exercise is gated on owning a GPU.
+- **The strongest baseline is built before the fancier method.** Module M05
+  produces a tuned gradient boosted model that Part 9 must beat, and Module M20
+  asks what the attempt proved.
+- **Content with a short shelf life is dated and isolated.** Module M20's model
+  landscape section is the clearest case: the decision procedure around it is
+  written to survive every model name in it being replaced.
