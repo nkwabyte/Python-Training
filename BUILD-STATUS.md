@@ -17,13 +17,14 @@ course/
 ├── 01-beginner/        B01-B12          curriculum outlines written, lessons pending
 ├── 02-intermediate/    01-13            complete
 ├── 03-advanced/        14-30            14-25 complete, 26-30 pending
-└── 04-system-design/   D01-D10, 31-36   outlines written, lessons pending
+├── 04-system-design/   D01-D10, 31-36   outlines written, lessons pending
+└── 05-machine-learning/ M01-M19         outlines written, lessons pending
 ```
 
 Nothing was renumbered. Modules 01 to 36 keep the numbers they have always had,
-and every cross-reference in the existing lessons still resolves. The two new
+and every cross-reference in the existing lessons still resolves. The three new
 tracks use their own prefixes: `B` for beginner, `D` for data structures and
-algorithms.
+algorithms, and `M` for machine learning.
 
 ---
 
@@ -117,6 +118,25 @@ and a stated link forward into Part 7.
 | 35 Reliability, Observability, Security | **not started** |
 | 36 Capstone | **not started** |
 
+### Level 05 — Machine Learning (Modules M01-M19)
+
+Full curriculum outlines in place, in the same shape as the other new tracks
+plus two extra sections per module: **What you build**, which names the artefact
+the module produces, and **Compute budget**, which states the hardware needed
+and the CPU or hosted fallback. PyTorch throughout, Hugging Face from M16.
+
+| Part | Modules | State |
+|---|---|---|
+| 8 Foundations of Learning | M01-M04 | outlines **done**; lessons, notebooks, exercises pending |
+| 9 Deep Learning with PyTorch | M05-M10 | outlines **done**; rest pending |
+| 10 Generative Models | M11-M13 | outlines **done**; rest pending |
+| 11 Language Models and LLMs | M14-M19 | outlines **done**; rest pending |
+
+Two modules in this level are large builds rather than lessons: **M15**, which
+pretrains a small GPT end to end, and **M19**, the capstone. Both need reference
+implementations, a small corpus, and checked-in checkpoints so a learner without
+a GPU can still complete every stage.
+
 ### Appendix (`course/appendix/`) — all not started
 `glossary.md`, `idioms-and-pitfalls.md`, `debugging-and-tooling.md`,
 `testing.md`, `interview-questions.md`, `resources.md`, `cheatsheets.md`
@@ -135,6 +155,10 @@ the files completes the cross-references with no other edits.
 3. **D01 to D03.** These are the modules Part 7 depends on for its vocabulary.
 4. **26 to 30.** Finish Applied Python, which completes Level 03.
 5. **D04 to D10**, then **31 to 36**, then the appendix.
+6. **M01 to M07**, which is the ML level's own foundation, then **M10** and
+   **M15**, since the transformer build and the mini LLM are what the level is
+   for. M08, M09, and Part 10 can follow. M16 to M19 last, because they move
+   fastest and will need the most maintenance.
 
 ---
 
@@ -183,3 +207,9 @@ and no forward references to material the learner has not met.
   start.
 - **DSA modules pair every complexity claim with a measurement**, because
   Python's constant factors are large enough that theory alone misleads.
+- **ML modules build before they call.** Autodiff, backpropagation, attention,
+  the transformer block, a tokeniser, and a language model are each implemented
+  from scratch and checked numerically against the library version, which is why
+  the ecosystem module (M16) sits after the from-scratch build (M15).
+- **Every ML module states a compute budget** and ships a CPU or hosted fallback,
+  so no exercise is gated on owning a GPU.

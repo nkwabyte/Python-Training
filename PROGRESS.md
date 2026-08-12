@@ -118,6 +118,49 @@ one or two sentences without looking.
 
 ---
 
+## Level 05 — Machine Learning
+
+### Part 8 — Foundations of Learning
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M01 | What Learning Is | | | | | |
+| M02 | The Maths You Will Actually Use | | | | | |
+| M03 | Linear Models and Gradient Descent | | | | | |
+| M04 | Evaluation and the Experimental Loop | | | | | |
+
+### Part 9 — Deep Learning with PyTorch
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M05 | Tensors and Autograd | | | | | |
+| M06 | Neural Networks, Derived and Built | | | | | |
+| M07 | Training That Actually Works | | | | | |
+| M08 | Convolutional Networks and Vision | | | | | |
+| M09 | Sequences and Attention | | | | | |
+| M10 | The Transformer, Built from Parts | | | | | |
+
+### Part 10 — Generative Models
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M11 | Autoencoders and VAEs | | | | | |
+| M12 | Generative Adversarial Networks | | | | | |
+| M13 | Diffusion Models | | | | | |
+
+### Part 11 — Language Models and LLMs
+
+| # | Module | Read | Exercises | Build | Quiz | Date |
+|---|---|---|---|---|---|---|
+| M14 | Tokenisation and Language Modelling | | | | | |
+| M15 | **Project: Build a Mini LLM** | | | | | |
+| M16 | Pretrained Models and the Ecosystem | | | | | |
+| M17 | Fine-tuning and Alignment | | | | | |
+| M18 | Serving, Evaluation, and Cost | | | | | |
+| M19 | **Capstone: Build, Fine-tune, Ship** | | | | | |
+
+---
+
 ## Checkpoint gates
 
 | Gate | Requirement | Passed |
@@ -130,6 +173,9 @@ one or two sentences without looking.
 | End of Part 5 | FastAPI service with DB, migrations, tests, Dockerfile, CI + a reproducible analysis notebook | |
 | End of Part 6 | For a given system requirement, choose the data structure, state its complexity, and defend the choice | |
 | End of Part 7 | Design doc with load target, storage justification, three failure modes, and your own load-test numbers | |
+| End of Part 9 | Attention and a transformer block implemented from tensors, matching the reference numerically | |
+| End of Part 10 | A generative model trained to convergence, evaluated with a metric rather than by eye | |
+| End of Level 05 | A pretrained mini LLM, a fine-tune that beats a baseline you set beforehand, and a served model with a cost model | |
 
 ---
 

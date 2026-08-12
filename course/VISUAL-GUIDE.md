@@ -46,8 +46,8 @@ like it makes sense.
 
 ## Setting up a notebook
 
-One notebook per **Part**, not per module. Eight notebooks in total across the
-four levels, counting the beginner track as one. A notebook that
+One notebook per **Part**, not per module. Twelve notebooks in total across the
+five levels, counting the beginner track as one. A notebook that
 holds a whole Part's sources produces better cross-references ("this is the same
 iterator protocol from Module 14, now driving the async for loop") than six
 isolated ones.
@@ -293,6 +293,42 @@ resolving, a tree rebalancing, a BFS frontier expanding ring by ring.
 - [34 Data at Scale](04-system-design/part-7-system-design/34-data-at-scale/VISUALS.prompt.md)
 - [35 Reliability, Observability, and Security](04-system-design/part-7-system-design/35-reliability-observability-security/VISUALS.prompt.md)
 - [36 Capstone](04-system-design/part-7-system-design/36-capstone/VISUALS.prompt.md)
+
+### Part 8 — Foundations of Learning
+- [M01 What Learning Is](05-machine-learning/part-8-ml-foundations/m01-what-learning-is/README.md)
+- [M02 The Maths You Will Actually Use](05-machine-learning/part-8-ml-foundations/m02-the-maths-you-will-use/README.md)
+- [M03 Linear Models and Gradient Descent](05-machine-learning/part-8-ml-foundations/m03-linear-models-and-gradient-descent/README.md)
+- [M04 Evaluation and the Experimental Loop](05-machine-learning/part-8-ml-foundations/m04-evaluation-and-the-experimental-loop/README.md)
+
+### Part 9 — Deep Learning with PyTorch
+The visuals to demand here are mechanical: a tensor reshaping, a gradient
+flowing backward through a graph, a convolution sliding, and an attention
+matrix lighting up. Insist on shapes being shown at every step.
+
+- [M05 Tensors and Autograd](05-machine-learning/part-9-deep-learning/m05-tensors-and-autograd/README.md)
+- [M06 Neural Networks, Derived and Built](05-machine-learning/part-9-deep-learning/m06-neural-networks/README.md)
+- [M07 Training That Actually Works](05-machine-learning/part-9-deep-learning/m07-training-that-works/README.md)
+- [M08 Convolutional Networks and Vision](05-machine-learning/part-9-deep-learning/m08-convolutional-networks-and-vision/README.md)
+- [M09 Sequences and Attention](05-machine-learning/part-9-deep-learning/m09-sequences-and-attention/README.md)
+- [M10 The Transformer, Built from Parts](05-machine-learning/part-9-deep-learning/m10-the-transformer/README.md)
+
+### Part 10 — Generative Models
+- [M11 Autoencoders and VAEs](05-machine-learning/part-10-generative-models/m11-autoencoders-and-vaes/README.md)
+- [M12 Generative Adversarial Networks](05-machine-learning/part-10-generative-models/m12-gans/README.md)
+- [M13 Diffusion Models](05-machine-learning/part-10-generative-models/m13-diffusion-models/README.md)
+
+### Part 11 — Language Models and LLMs
+Accuracy guardrails matter more in this part than anywhere else in the course.
+Generated explainers routinely overstate what attention weights explain and
+describe fine-tuning as teaching a model facts. Paste both corrections into the
+constraint block before generating.
+
+- [M14 Tokenisation and Language Modelling](05-machine-learning/part-11-language-models/m14-tokenisation-and-language-modelling/README.md)
+- [M15 Build a Mini LLM from Scratch](05-machine-learning/part-11-language-models/m15-build-a-mini-llm/README.md)
+- [M16 Pretrained Models and the Open Ecosystem](05-machine-learning/part-11-language-models/m16-pretrained-models-and-the-ecosystem/README.md)
+- [M17 Fine-tuning and Alignment](05-machine-learning/part-11-language-models/m17-fine-tuning-and-alignment/README.md)
+- [M18 Serving, Evaluation, and Cost](05-machine-learning/part-11-language-models/m18-serving-evaluation-and-cost/README.md)
+- [M19 Capstone](05-machine-learning/part-11-language-models/m19-capstone/README.md)
 
 ---
 

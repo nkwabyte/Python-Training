@@ -18,7 +18,8 @@ course/
 ├── 01-beginner/        12 modules   B01-B12          10 weeks   6-8 h/week
 ├── 02-intermediate/    13 modules   01-13            8 weeks    10-15 h/week
 ├── 03-advanced/        17 modules   14-30            12 weeks   10-15 h/week
-└── 04-system-design/   16 modules   D01-D10, 31-36   10 weeks   10-15 h/week
+├── 04-system-design/   16 modules   D01-D10, 31-36   10 weeks   10-15 h/week
+└── 05-machine-learning/ 19 modules  M01-M19          16 weeks   10-15 h/week
 ```
 
 | Level | What it is for |
@@ -27,6 +28,7 @@ course/
 | **[02 Intermediate](course/02-intermediate/README.md)** | What the interpreter is actually doing, and how to model problems with types the Python way. Foundations and object-oriented Python. |
 | **[03 Advanced](course/03-advanced/README.md)** | Code that survives review and load. Generators, decorators, typing, testing, concurrency, profiling, CPython internals, then applied work: automation, HTTP, databases, FastAPI, data, deployment. |
 | **[04 System Design](course/04-system-design/README.md)** | Data structures and algorithms first, then architecture: estimation, service models, caching and queues, data at scale, reliability, and a capstone. |
+| **[05 Machine Learning](course/05-machine-learning/README.md)** | Learning from first principles, deep learning in PyTorch, generative models including GANs and diffusion, then tokenisation, pretraining a mini LLM, fine tuning, serving, and a capstone. |
 
 Full detail, week by week, is in [`CURRICULUM.md`](CURRICULUM.md).
 
@@ -41,6 +43,7 @@ Full detail, week by week, is in [`CURRICULUM.md`](CURRICULUM.md).
 | You write Python scripts but could not explain what `b = a` does to the object | [Module 02](course/02-intermediate/part-1-foundations/02-objects-names-data-model/README.md) |
 | You are fluent with classes, generators, and decorators | [Module 14](course/03-advanced/part-3-advanced/14-iterators-and-generators/README.md) |
 | You ship production Python and want scale and interview readiness | [Module D01](course/04-system-design/part-6-data-structures-and-algorithms/d01-complexity-and-measurement/README.md) |
+| You ship production Python and want to build models rather than call them | [Module M01](course/05-machine-learning/part-8-ml-foundations/m01-what-learning-is/README.md) |
 
 Two honest self-tests before skipping a level. If you cannot explain why
 `a = [1,2]; b = a; b.append(3)` changes `a` in terms of names and objects, do
@@ -89,7 +92,7 @@ producing the *illusion* of understanding. Only the interpreter tells the truth.
 7. Take the self-check quiz at the bottom of the README. If you cannot answer a
    question in one or two sentences, go back to that section.
 
-**Do not skip the milestone projects** (B12, 07, 13, 20, 36). They are where
+**Do not skip the milestone projects** (B12, 07, 13, 20, 36, M15, M19). They are where
 isolated concepts fuse into working knowledge. A module you can pass a quiz on
 but cannot use in a project, you do not know.
 
@@ -164,3 +167,7 @@ without looking anything up:
 - State the complexity of your own code, and prove it with a measurement.
 - Take an open-ended design prompt, estimate its load, sketch the architecture,
   name the failure modes, and say what you would build first.
+- Implement attention and a transformer block from tensors, and check them
+  numerically against the reference implementation.
+- Pretrain a small language model on data you prepared, and fine-tune a large
+  one under a fixed memory budget, with an evaluation that could reject it.
