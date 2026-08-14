@@ -24,9 +24,9 @@ learner cannot learn from.
 | Level | Module | Notebooks | State |
 |---|---|---|---|
 | 01-beginner | b01-first-program-and-the-interpreter | 4 | **authored** |
-| 01-beginner | b02-data-names-and-types | 4 | **no teaching yet** |
-| 01-beginner | b03-making-decisions | 5 | **no teaching yet** |
-| 01-beginner | b04-loops-and-repetition | 6 | **no teaching yet** |
+| 01-beginner | b02-data-names-and-types | 4 | 2 authored, 2 bare |
+| 01-beginner | b03-making-decisions | 5 | **authored** |
+| 01-beginner | b04-loops-and-repetition | 6 | **authored** |
 | 01-beginner | b05-collections | 5 | **no teaching yet** |
 | 01-beginner | b06-functions | 6 | **no teaching yet** |
 | 01-beginner | b07-working-with-text | 5 | **no teaching yet** |
@@ -90,7 +90,7 @@ learner cannot learn from.
 | 05-machine-learning | m20-choosing-an-approach | 1 | **no teaching yet** |
 | 05-machine-learning | m21-capstone | 4 | **no teaching yet** |
 
-**Totals: 264 notebooks. 6 authored, 63 with the module lesson inlined, 195 with no teaching yet.**
+**Totals: 264 notebooks. 19 authored, 63 with the module lesson inlined, 182 with no teaching yet.**
 
 ---
 
