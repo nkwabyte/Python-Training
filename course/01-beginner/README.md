@@ -34,6 +34,10 @@ can show someone, in twelve modules.
 | [B11](b11-first-look-at-classes/README.md) | A First Look at Objects and Classes | L3 E5 |
 | [B12](b12-project-expense-tracker/README.md) | Milestone Project: Expense Tracker CLI | P10 |
 
+The beginner track is the first one to finish in this build pass. See
+[`course/01-beginner/BEGINNER-PASS-PLAN.md`](course/01-beginner/BEGINNER-PASS-PLAN.md)
+for the completion order.
+
 ---
 
 ## How this level is taught
