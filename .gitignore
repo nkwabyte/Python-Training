@@ -16,3 +16,7 @@ htmlcov/
 *.db
 *.sqlite3
 .ipynb_checkpoints/
+
+.idea/
+.vscode/
+
