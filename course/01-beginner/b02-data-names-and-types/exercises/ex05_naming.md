@@ -1,50 +1,14 @@
-# B02 Data, Names, and Types
-## Written exercise: ex05_naming.md
+# Naming exercise
 
-**The task**
+### Lesson
+Good names help you understand code months later. Always ask: what does this
+value represent? What unit is it in? Is there a better word than `x` or `a`?
 
-Rename fifteen badly named variables and justify each choice.
+### Task
+Rename each weak variable name with a clearer one and explain why.
 
-This one is written rather than coded. Reasoning you can defend out loud is the
-point, so answer in prose and keep the reasoning, not only the conclusion.
-
----
-
-## What a good answer contains
-
-- A position stated plainly in the first sentence, before any hedging.
-- The reason it follows, in terms the module actually taught.
-- The alternative you rejected, and what would have made you choose it instead.
-- What evidence would change your mind. An answer that nothing could falsify is
-  not an answer.
-
----
-
-## Your answers
-
-### 1.
-
-_Write here._
-
-### 2.
-
-_Write here._
-
-### 3.
-
-_Write here._
-
-<!--
-Add as many numbered sections as the exercise asks for. Keep your first attempt
-even when you later disagree with it; the record of a changed mind is the most
-useful thing in this file.
--->
-
----
-
-## Before you move on
-
-- [ ] Every part of the task above has an answer, including the parts you found
-      uncomfortable.
-- [ ] At least one answer names something you were wrong about.
-- [ ] You could defend each answer to someone who disagrees.
+1. `x` = total hours worked
+2. `a` = user name
+3. `thing` = price in dollars
+4. `list` = tags
+5. `n` = retry count
