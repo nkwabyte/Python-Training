@@ -23,11 +23,11 @@ learner cannot learn from.
 
 | Level | Module | Notebooks | State |
 |---|---|---|---|
-| 01-beginner | b01-first-program-and-the-interpreter | 4 | **authored** |
-| 01-beginner | b02-data-names-and-types | 4 | 2 authored, 2 bare |
-| 01-beginner | b03-making-decisions | 5 | **authored** |
-| 01-beginner | b04-loops-and-repetition | 6 | **authored** |
-| 01-beginner | b05-collections | 5 | **no teaching yet** |
+| 01-beginner | b01-first-program-and-the-interpreter | 4 | 1 authored, 3 bare |
+| 01-beginner | b02-data-names-and-types | 4 | **no teaching yet** |
+| 01-beginner | b03-making-decisions | 5 | **no teaching yet** |
+| 01-beginner | b04-loops-and-repetition | 6 | **no teaching yet** |
+| 01-beginner | b05-collections | 5 | **authored** |
 | 01-beginner | b06-functions | 6 | **no teaching yet** |
 | 01-beginner | b07-working-with-text | 5 | **no teaching yet** |
 | 01-beginner | b08-files-and-folders | 5 | **no teaching yet** |
@@ -35,7 +35,7 @@ learner cannot learn from.
 | 01-beginner | b10-organising-code | 3 | **no teaching yet** |
 | 01-beginner | b11-first-look-at-classes | 4 | **no teaching yet** |
 | 01-beginner | b12-project-expense-tracker | 5 | **no teaching yet** |
-| 02-intermediate | 01-runtime-and-toolchain | 3 | lesson inlined |
+| 02-intermediate | 01-runtime-and-toolchain | 3 | **no teaching yet** |
 | 02-intermediate | 02-objects-names-data-model | 5 | lesson inlined |
 | 02-intermediate | 03-core-types | 4 | lesson inlined |
 | 02-intermediate | 04-control-flow-and-functions | 5 | lesson inlined |
@@ -90,7 +90,7 @@ learner cannot learn from.
 | 05-machine-learning | m20-choosing-an-approach | 1 | **no teaching yet** |
 | 05-machine-learning | m21-capstone | 4 | **no teaching yet** |
 
-**Totals: 264 notebooks. 19 authored, 63 with the module lesson inlined, 182 with no teaching yet.**
+**Totals: 264 notebooks. 8 authored, 60 with the module lesson inlined, 196 with no teaching yet.**
 
 ---
 

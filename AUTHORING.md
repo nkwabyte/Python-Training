@@ -136,40 +136,8 @@ failures. Rules for the checks themselves:
 
 ## Formats by level
 
-Every exercise in every level is a notebook. The learner meets one format from
-their first hour to the capstone, and the explanation always sits next to the
-code it explains.
-
-| Level | Exercise format | Solutions |
+| Level | Exercise format | Why |
 |---|---|---|
-| 01 Beginner | Notebooks | One solution notebook per exercise |
-| 02 Intermediate | Notebooks | One solution notebook per exercise |
-| 03 Advanced | Notebooks | One solution notebook per exercise |
-| 04 System Design, Part 6 | Notebooks | One solution notebook per exercise |
-| 05 Machine Learning | Notebooks | One `SOLUTIONS.md` per module |
-| Written exercises, any level | `.md` worksheets | Worked answer in the module `SOLUTIONS.md` |
-
-Support files that an exercise operates on rather than teaches from stay as
-`.py`. Module 01's shadowing exercise needs a real file called `random.py` on
-disk; module 06 needs real packages to import. Those are program files, not
-lessons, and turning them into notebooks would destroy the exercise.
-
-### Two states a notebook can be in
-
-**Converted** means the exercise content is intact and split so each task is its
-own runnable cell, with the module README still carrying the teaching. Notebook
-metadata says `"authored_teaching": false`.
-
-**Authored** means it meets the definition of done below: every construct taught
-before it is asked for, a deliberate failure that is explained, fill-in
-templates with `# ANSWER n` markers, and a self-check that names what is
-missing. Metadata says `"authored_teaching": true`.
-
-`CONVERSION-STATUS.md` tracks which modules are in which state and is the work
-list for the authoring pass. Setting the metadata flag is part of finishing a
-module, not an afterthought.
-
----|---|---|
 | 01 Beginner | Notebooks | The learner needs explanation and execution interleaved |
 | 02 Intermediate | Existing `.py` with embedded tests | Modules 01 to 13 already have full README lessons that teach |
 | 03 Advanced | Existing `.py` with embedded tests | Same, for modules 14 to 25 |
@@ -187,6 +155,9 @@ contains, numbered answer spaces, and a closing checklist.
 - [ ] Every construct used in a task is taught above it, in the same notebook.
 - [ ] At least one deliberate failure, explained immediately.
 - [ ] Every task is a template with `___` placeholders and an `# ANSWER n` marker.
+- [ ] Templates whose blanks sit in operator or keyword positions will not compile
+      until filled. That is allowed and often better, but the cell must open with
+      a comment saying so. Teaching cells must always compile.
 - [ ] At least one prediction task and one judgement task.
 - [ ] Self-check present, checks named specifically, and it fails on a fresh copy.
 - [ ] What you learned mirrors the teaching sections in order.
