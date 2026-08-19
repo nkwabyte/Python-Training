@@ -82,12 +82,12 @@ and the solutions against those outlines.
 ### Level 03 — Advanced, Part 5 Applied Python
 | Module | State |
 |---|---|
-| 25 Automation and the OS | README + VISUALS **done**; exercises partial (ex02 written) |
-| 26 HTTP, APIs, and Scraping | **not started** |
-| 27 Databases and Persistence | **not started** |
-| 28 Building APIs with FastAPI | **not started** |
-| 29 Data and ML Foundations | **not started** |
-| 30 Packaging, Deployment, Ops | **not started** |
+| 25 Automation and the OS | **Complete.** README, VISUALS, exercises, solutions. |
+| 26 HTTP, APIs, and Scraping | **Complete.** README, VISUALS, notebooks, crawler package with student README, solutions. |
+| 27 Databases and Persistence | **Complete.** README, VISUALS, notebooks, repository package with student README, solutions. |
+| 28 Building APIs with FastAPI | **Complete.** README, VISUALS, notebooks, FastAPI service package with student README, solutions. |
+| 29 Data and ML Foundations | **Complete.** README, VISUALS, NumPy/pandas/sklearn notebooks, solutions. |
+| 30 Packaging, Deployment, Ops | **Complete.** README, VISUALS, PEP 621 package with student README, Docker & CI worksheets, solutions. |
 
 ### Level 04 — Part 6, Data Structures and Algorithms (D01-D10)
 
@@ -111,12 +111,12 @@ and a stated link forward into Part 7.
 ### Level 04 — Part 7, System Design with Python
 | Module | State |
 |---|---|
-| 31 Design Fundamentals | **not started** |
-| 32 Service Architecture | **not started** |
-| 33 Caching, Queues, Jobs | **not started** |
-| 34 Data at Scale | **not started** |
-| 35 Reliability, Observability, Security | **not started** |
-| 36 Capstone | **not started** |
+| 31 Design Fundamentals | **Complete.** README, estimation and requirements notebooks. |
+| 32 Service Architecture | **Complete.** README, concurrency notebooks, decomposition worksheet, solutions. |
+| 33 Caching, Queues, Jobs | **Complete.** README, cache-aside & single-flight notebooks, idempotent worker, solutions. |
+| 34 Data at Scale | **Complete.** README, consistent hashing & sharding notebooks, stream worksheet, solutions. |
+| 35 Reliability, Observability, Security | **Complete.** README, circuit breaker & rate limiter notebooks, structured logging, solutions. |
+| 36 Capstone | **Complete.** README, capacity estimation, architecture doc, runnable service implementation, load test, solutions. |
 
 ### Level 05 — Machine Learning (Modules M01-M21)
 

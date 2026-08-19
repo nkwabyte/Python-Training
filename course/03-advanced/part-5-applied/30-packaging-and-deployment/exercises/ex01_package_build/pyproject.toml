@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pkgdemo"
+version = "0.1.0"
+description = "Reference Python package demonstrating PEP 621 structure"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Python Training Student", email = "student@example.com" }
+]
+dependencies = []
+
+[project.scripts]
+pkgdemo = "pkgdemo.core:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
